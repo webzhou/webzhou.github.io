@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>大前端完整学习路线</title>
+    <link rel="stylesheet" href="/css/reveal.css">
+    <link rel="stylesheet" href="/css/theme/black.css">
+    <style>
+    body {
+        background: -webkit-radial-gradient(center, circle cover, #555a5f 0%, #1c1e20 100%)
+    }
+    </style>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h2>大前端完整学习路线</h2>
+                <p style="text-align: center;">zhouyundun</p>
+                <p style="text-align: center;">2018.09.06</p>
+            </section>
+            <section>
+                <h2>①PS+HTML+CSS+JAVASCRIPT</h2>
+                <p class="fragment" data-fragment-index="0">结构层(HTML)</p>
+                <p class="fragment" data-fragment-index="1">表示层(CSS)</p>
+                <p class="fragment" data-fragment-index="2">行为层(JAVASCRIPT)</p>
+                <p class="fragment" data-fragment-index="2">JQUERY 简化DOM操作以及特效动画的实现</p>
+            </section>
+            <section>
+                <h2>②HTML5+CSS3和移动Web开发</h2>
+                <p class="fragment" data-fragment-index="0">-HTML5表单、音频和视频、离线和本地存储、SVG、Web Socket、Canvas等</p>
+                <p class="fragment" data-fragment-index="1">-CSS3阴影、动画、景深和深透、3D效果等(完全可替代之前的flash)</p>
+                <p class="fragment" data-fragment-index="2">-响应式概念、删格系统、流式布局、rem、百分比布局以及移动端常用特效Swiper</p>
+            </section>
+            <section>
+                <h2>③HTTP服务和AJAX简易编程</h2>
+                <p class="fragment" data-fragment-index="0">-NODEJS、APACHE、NGINX、TOMCAT、IIS</p>
+                <p class="fragment" data-fragment-index="1">-JSON和JSON解析、数据绑定和模板技术、JSONP、跨域</p>
+            </section>
+            <section>
+                <h2>④编程思想</h2>
+                <p class="fragment" data-fragment-index="0">-面向对象(类Class和实例Instance)-如何把一个效果通过程序实现</p>
+                <p class="fragment" data-fragment-index="1">-Rome was not built in a day</p>
+                <p class="fragment" data-fragment-index="2">-善用google开发者工具</p>
+            </section>
+            <section>
+                <h2>⑤封装一个属于自己的框架</h2>
+                <p class="fragment" data-fragment-index="0">-If I have seen further, it is by standing on the shoulders of giants</p>
+                <p class="fragment" data-fragment-index="1">-JQUERY 提供了哪些API?</p>
+            </section>
+            <section>
+                <h2>⑥前端自动化及流行框架</h2>
+                <p class="fragment" data-fragment-index="0">-GIT/SVN、NPM/Bower依赖管理工具、Grunt/Gulp/Webpack、FIS3、LESS。</p>
+                <p class="fragment" data-fragment-index="1">-MVC框架 Angular.js、Vue.js</p>
+            </section>
+
+            <section>
+                <h2>⑦模块化组件开发</h2>
+                <p class="fragment" data-fragment-index="0">-RequireJS、SeaJS</p>
+                <p class="fragment" data-fragment-index="1">-用于管理N多JS库</p>
+            </section>
+
+            <section>
+                <h2>⑧较火的前端框架和后台框架</h2>
+                <p class="fragment" data-fragment-index="0">-Angular.js、Vue.js</p>
+                <p class="fragment" data-fragment-index="1">-Drupal、Laravel、WordPress、ThinkPHP等</p>
+            </section>
+
+            <section>
+                <h2>⑨全栈开发</h2>
+                <p class="fragment" data-fragment-index="0">-前端的全栈开发是基于NODEJS</p>
+                <p class="fragment" data-fragment-index="1">-这里的全栈开发是
+                前端(HTML)+后台(PHP)+服务器(NGINX)</p>
+            </section>
+            <section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+              <h1>The End</h1>
+              <h1>Thank you :-)</h1>
+            </section>
+        </div>
+    </div>
+    <script src="/lib/js/head.min.js"></script>
+    <script src="/js/reveal.js"></script>
+    <script>
+    function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, '\\$&');
+        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
+    var role = getParameterByName('role');
+    role = role === 'master' ? role : 'client';
+
+    Reveal.initialize({
+        history: true,
+
+        multiplex: {
+            secret: '15359824935284436230',
+            id: 'b686a025b7a9a61a',
+            url: 'http://192.168.1.111:1948'
+        },
+
+        dependencies: [{
+            src: 'plugin/socket.io.min.js',
+            async: true
+        }, {
+            src: 'plugin/multiplex/' + role + '.js',
+            async: true
+        }, {
+            src: 'plugin/markdown/marked.js'
+        }, {
+            src: 'plugin/markdown/markdown.js'
+        }, {
+            src: 'plugin/notes/notes.js',
+            async: true
+        }, {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            callback: function() {
+                hljs.initHighlightingOnLoad();
+            }
+        }]
+    });
+    </script>
+<script type="text/javascript" charset="utf-8" src="http://192.168.1.111:8132/livereload.js"></script></body>
+
+</html>
