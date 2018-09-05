@@ -2,7 +2,7 @@ $(function(){
 	$(".long").on("scroll",function(){
 		var _top = $(this).scrollTop();
 		console.log(_top);
-		if(_top>800){
+		if(_top>700){
 			$(".im10").fadeIn();
 		}
 	});
