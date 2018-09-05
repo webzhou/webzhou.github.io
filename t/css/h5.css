@@ -171,6 +171,9 @@ a.arr {
   top: 200px;
   z-index: 9;
 }
+.s1 {
+  background: #fff;
+}
 .s1 img {
   vertical-align: top;
   opacity: 0;
