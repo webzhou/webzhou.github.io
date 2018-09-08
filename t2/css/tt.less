@@ -1,0 +1,482 @@
+body,
+html {
+    font: 12px 'microsoft yahei';
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    width: 6.4rem;
+
+}
+body{
+	width: 6.4rem;
+	margin: 0 auto;
+}
+
+a {
+    vertical-align: top
+}
+
+.load {
+    font-size: 50px;
+    position: relative;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, .8)
+}
+
+li,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+figure,
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0
+}
+
+.music {
+    position: absolute;
+    width: 31px;
+    height: 31px;
+    z-index: 2;
+    top: 50px;
+    right: 25px
+}
+
+.music.play {
+    -webkit-animation: music 1.5s linear infinite;
+    animation: music 1.5s linear infinite
+}
+
+a.arr {
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
+    left: 50%;
+    margin-left: -45px;
+    -webkit-animation: arr2 1.2s linear infinite;
+    animation: arr2 1.2s linear infinite;
+    width: 90px;
+    height: 67px;
+    text-align: center
+}
+
+.loader {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 35px;
+    height: 35px;
+    margin: auto;
+    -webkit-animation: spin 1.5s linear infinite;
+    -moz-animation: spin 1.5s linear infinite
+}
+
+.loader i {
+    position: absolute;
+    display: block;
+    width: 35px;
+    height: 35px;
+    border-radius: 25px
+}
+
+.loader i:after,
+.loader i:before {
+    position: absolute;
+    display: block;
+    width: inherit;
+    height: inherit;
+    content: '';
+    border-radius: inherit
+}
+
+.loader i:first-child:before {
+    -webkit-animation: rotate-top-left 1.5s linear infinite;
+    -moz-animation: rotate-top-left 1.5s linear infinite;
+    background: rgba(52, 149, 221, .9)
+}
+
+.loader i:first-child:after {
+    -webkit-animation: rotate-top-right 1.5s linear infinite;
+    -moz-animation: rotate-top-right 1.5s linear infinite;
+    background: rgba(225, 73, 44, .9)
+}
+
+.loader i:last-child:before {
+    -webkit-animation: rotate-bottom-left 1.5s linear infinite;
+    -moz-animation: rotate-bottom-left 1.5s linear infinite;
+    background: rgba(249, 206, 43, .9)
+}
+
+.loader i:last-child:after {
+    -webkit-animation: rotate-bottom-right 1.5s linear infinite;
+    -moz-animation: rotate-bottom-right 1.5s linear infinite;
+    background: rgba(0, 153, 117, .9)
+}
+
+.wrap {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+
+.del {
+    position: absolute;
+    right: 120px;
+    top: 200px;
+    z-index: 9
+}
+
+.s1 {
+    background: #fff;
+    height: 21rem;
+    position: relative;
+}
+
+.s1 img {
+    vertical-align: top;
+    opacity: 0;
+
+}
+
+.logo {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    opacity: 0;
+    z-index: 200
+}
+
+.s1  .im1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 20;
+    width: 6.4rem;
+    height: 21rem;
+}
+
+.s1 .im2 {
+    position: absolute;
+    left: 10px;
+    top: 0
+}
+
+.s1 .im3 {
+    position: absolute;
+    left: 0;
+    top: 292px;
+    z-index: 25
+}
+
+.s1 .im4 {
+    position: absolute;
+    right: 55px;
+    top: 390px;
+    z-index: 25
+}
+
+.s1 .im5 {
+    position: absolute;
+    right: 55px;
+    top: 440px;
+    z-index: 26
+}
+
+.s1 .im6 {
+    position: absolute;
+    right: 35px;
+    top: 440px;
+    z-index: 26
+}
+
+.s1 .im7 {
+    position: absolute;
+    right: 130px;
+    top: 100px;
+    z-index: 26
+}
+
+.s1 .im8 {
+    position: absolute;
+    left: 50%;
+    top: 300px;
+    margin-left: -160px;
+    z-index: 26
+}
+
+.s1 .im9 {
+    position: absolute;
+    right: 100px;
+    top: 260px;
+    z-index: 26
+}
+
+.s1 .im10 {
+    position: absolute;
+    left: 18px;
+    top: 1520px;
+    z-index: 26
+}
+
+.s1 .s1main {
+    width: 100%;
+    height: 384px;
+    position: relative;
+    margin-top: 50px
+}
+
+.s1.cur .logo {
+    -webkit-animation: bounceIn .6s .2s forwards;
+    animation: bounceIn .6s .2s forwards
+}
+
+.s1.cur .im1 {
+    -webkit-animation: vanishIn 2s 1s forwards
+}
+
+.s1.cur .im2 {
+    -webkit-animation: bounceIn .5s .5s forwards
+}
+
+.s1.cur .im3 {
+    -webkit-animation: fadeInLeft .6s .7s forwards
+}
+
+.s1.cur .im4 {
+    -webkit-animation: forward 10s 2.7s forwards
+}
+
+.s1.cur .im5 {
+    -webkit-animation: forwardbl 10s 2.7s forwards
+}
+
+.s1.cur .im6 {
+    -webkit-animation: fadeIn 1s 12.7s infinite forwards
+}
+
+.s1.cur .im7 {
+    -webkit-animation: shaker 25s 2s ease-out infinite forwards
+}
+
+.s1.cur .im8 {
+    -webkit-animation: shakers 25s 2s ease-in infinite forwards
+}
+
+.s1.cur .im9 {
+    -webkit-animation: shakert 25s 2s linear infinite forwards
+}
+
+.s1.cur .im10 {
+    -webkit-animation: bounceIn .5s .5s forwards
+}
+
+@keyframes shaker {
+    from,
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translate3d(5px, 0, 0);
+        opacity: 1
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translate3d(-5px, 0, 0);
+        opacity: 1
+    }
+}
+
+@keyframes shakers {
+    from,
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translate3d(10px, 0, 0);
+        opacity: 1
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translate3d(-8px, 0, 0);
+        opacity: 1
+    }
+}
+
+@keyframes shakert {
+    from,
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translate3d(5px, 5px, 0);
+        opacity: 1
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translate3d(-5px, -5px, 0);
+        opacity: 1
+    }
+}
+
+@keyframes forward {
+    0% {
+        right: -40px;
+        opacity: 0
+    }
+    10% {
+        right: -30px;
+        opacity: 1
+    }
+    60% {
+        right: 0;
+        opacity: 1
+    }
+    100% {
+        right: 20px;
+        opacity: 1
+    }
+}
+
+@keyframes forwardbl {
+    0% {
+        right: -40px;
+        opacity: 0
+    }
+    10% {
+        opacity: 1
+    }
+    20% {
+        opacity: 0
+    }
+    30% {
+        opacity: 1
+    }
+    40% {
+        opacity: 0
+    }
+    50% {
+        opacity: 1
+    }
+    60% {
+        right: 0;
+        opacity: 0
+    }
+    70% {
+        opacity: 1
+    }
+    80% {
+        opacity: 0
+    }
+    90% {
+        opacity: 1
+    }
+    100% {
+        right: 20px;
+        opacity: 0
+    }
+}
+
+.loadwrap {
+    width: 100%;
+    height: 100%;
+    background: #155fc9;
+    position: absolute;
+    z-index: 101
+}
+
+#caseBlanche {
+    height: 150px;
+    width: 150px;
+    float: left;
+    position: absolute;
+    z-index: 99;
+    left: 0;
+    right: 0;
+    top: -17%;
+    bottom: 0;
+    margin: auto
+}
+
+#caseBlanche #load {
+    height: 150px;
+    width: 100%;
+    color: #fff;
+    font-family: calibri;
+    text-align: center;
+    position: absolute;
+    font-size: 2rem;
+    line-height: 50px;
+    text-align: center
+}
+
+#load i {
+    height: 100%;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    line-height: 150px
+}
+
+#test {
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    top: 0;
+    left: 38px
+}
+
+#rond {
+    height: 150px;
+    width: 150px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    animation: rond 2s infinite;
+    -webkit-animation: rond 2s infinite
+}
+
+.loading {
+    width: 100%;
+    color: #fff;
+    font-size: 24px;
+    position: absolute;
+    top: 171px;
+    text-align: center
+}
